@@ -1,0 +1,356 @@
+@charset "UTF-8";
+* {
+/* before: 
+	width + padding + border = actual width of an element
+	height + padding + border = actual height of an element
+	after: 
+	width = actual width of an element
+	height = actual height of an element
+*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #434343;
+	color: #FFFFFF; /* font color + icon, not include link */
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 0.9em;
+}
+
+ul {
+	list-style: none;
+}
+
+/* 第一部分 */
+/* top header: 下面四个元素nav, span, a(logout), 小头像 */
+.top-header {
+	height: 60px;
+	width: 100%;
+	background-color: #47AAF1;
+	box-shadow: 0px 2px 10px #333333;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex; /* 这个标签里面的素有元素都是子元素 */
+	align-items: center;
+}
+
+/* top navigation: 一共三个元素，Home, Contact, About */
+.top-nav {
+	flex: 1; /* nav占据整个header，把右面的元素都挤到最右边 */
+}
+
+.top-nav a {
+	color: #F9F9F9;
+	font-weight: 400;
+	margin-left: 20px;
+	text-decoration: none; /* 标签下划线取消 */
+}
+
+#welcome-msg {
+	border-right: 1px solid #FFFFFF;
+	padding-right: 10px;
+}
+
+#logout-link {
+	padding-left: 10px;
+	color: white;
+}
+
+/* 最上面小人头像 */
+.avatar {
+	background: #FFFFFF; /* 背景设置成深灰色 */
+	border-radius: 50%; /* 背景设置成原型 */
+	color: #333C4D; /* 人像设置成深灰色 */
+	height: 40px;
+	width: 40px;
+	margin-right: 20px;
+    margin-left: 10px;
+	padding-left: 9px;
+	padding-top: 5px;
+}
+
+/* 第二部分 */
+/* container: main page */
+.container {
+	margin: 60px auto; /* 上面top正好是60px */
+	max-width: 1000px;
+	min-width: 600px;
+}
+
+/* header: daisy */
+.container > header {
+	align-items: center;
+	background: url("../pic/jupiter1.jpg") no-repeat 0 40%;
+	background-size: 100%;
+	display: flex;
+	height: 250px;
+}
+
+/* 两个单词加竖线 */
+.container > header p {
+	border-left: 2px solid #FFFFFF; /* 只有左边有边框就是一个竖线 */
+	font-weight: 400;
+	font-size: 2em; 
+	line-height: 1em; /* 不设置行间距为2em */
+	margin-left: 200px; /* 竖线距离最左边距离 */
+	padding-left: 5px; /* 距离右边竖线的距离 */
+}
+
+/* Search这个词 */
+#search {
+	color: #FBAF41;
+}
+
+/* Recommendation这个词 */
+#recommendation {
+	color: #346DF2;
+}
+
+/* main section */
+.main-section {
+	background: #F3BB43;
+}
+
+/* 第三部分 */
+/* login form */
+#login-form {
+	color: #624630; /* 棕色 Username, Password */
+	margin: 0px auto; /* form 上下为零，左右居中 */
+	overflow: auto; 
+	padding: 40px; 
+	width: 350px;
+}
+
+#login-form label {
+	display: block; /* User, Password独自占一行 */
+}
+
+#login-form input {
+	border: none;
+	display: block;
+	margin-bottom: 10px;
+	padding: 8px;
+	width: 100%; /* width: 350 - 40 * 2 = 270 */
+}
+
+#login-form #register-form-btn {
+	cursor: pointer; /* 鼠标点击按钮时变成小手 */
+	float: left;
+	padding: 8px 10px;
+	text-align: left;
+}
+
+#login-form #login-btn {
+	cursor: pointer; /* 鼠标点击按钮时变成小手 */
+	float: right;
+	padding: 8px 20px;
+	text-align: right;
+}
+
+#login-error {
+	clear: both;
+	color: #990000;
+	padding-top: 10px;
+}
+
+/* 第四部分 */
+/* register form */
+#register-form {
+	color: #624630; /* 棕色 Username, Password */
+	margin: 0px auto; /* form 上下为零，左右居中 */
+	overflow: auto; 
+	padding: 40px; 
+	width: 350px;
+}
+
+#register-form label {
+	display: block; /* User, Password独自占一行 */
+}
+
+#register-form input {
+	border: none;
+	display: block;
+	margin-bottom: 10px;
+	padding: 8px;
+	width: 100%; /* width: 350 - 40 * 2 = 270 */
+}
+
+#register-form #login-form-btn {
+	cursor: pointer; /* 鼠标点击按钮时变成小手 */
+	float: left;
+	padding: 8px 10px;
+	text-align: left;
+}
+
+#register-form #register-btn {
+	cursor: pointer; /* 鼠标点击按钮时变成小手 */
+	float: right;
+	padding: 8px 20px;
+	text-align: right;
+}
+
+#register-result {
+	clear: both;
+	color: #990000;
+	padding-top: 10px;
+}
+
+/* 第五部分 */
+/* aside */
+#item-nav {
+	float: left;
+	width: 180px;
+}
+
+/* Nearby, My Favorites, Recommendation */
+.main-nav-btn {
+	background: none; /* 背景颜色是透明的 */
+	border-top: 1px solid #FFFFFF; /* 上面有一个白线 */
+	color: #FFFFFF; /* 按钮上面的字是白色的 */
+	display: block;
+	padding: 20px;
+	text-align: left;
+	text-decoration: none; /* 这里本来是link，把下划线去掉 */
+}
+
+.main-nav-btn:hover {
+	background: rgba(255, 255, 255, 0.8); /* 鼠标放在文字上面背景颜色变成浅白 */
+	color: #624630; /* 鼠标放在文字上面文字变成棕色 */
+}
+
+.main-nav-btn .active {
+	background: #F2EBD9; /* 鼠标点击以后背景颜色变成浅白 */
+	color: #624630; /* 鼠标点击以后文字变成棕色 */
+}
+
+.main-nav-btn i {
+	width: 20px; /* 设置了小图像的大小，和后面文字有了间距 */
+}
+
+/* 第六部分 */
+/* item list */
+#item-list {
+	background: #F2EBD9; /* 背景颜色是浅黄色 */
+	color: #624630; /* 文字颜色是棕色 */
+	list-style: none;
+	margin-left: 180px; /* 左边 aside 宽度是 180px*/
+	min-height: 250px;
+	padding: 10px;
+}
+
+/* ??? */
+#item-list.notice { 
+	font-size: 16px;
+	padding: 60px;
+	text-align: center;
+}
+
+/* 第七部分 */
+/* item */
+.item {
+	align-items: center; /* 上下居中 */
+	/* border-bottom: 1px solid #FFF; 这个实际没有显示 */
+	display: flex;
+	margin: 10px;
+	padding: 15px;
+	/* transition: background-color 500ms linear;  */
+}
+
+.item:last-child {
+	border: none;
+}
+
+.item:hover {
+	background: rgba(255, 255, 255, 0.8);
+	transition: background-color 500ms linear;
+}
+
+/* li左边img */
+.item img {
+	border: 1px solid #FFF;
+	height: 80px;
+	width: 80px;
+}
+
+/* 第八部分 */
+/* li=item有三部分：左边是图片，中间是三行，右边是一个div 
+ first-of-type 选择器匹配属于其父元素的特定类型的首个子元素的每个元素
+ 也就是item name, item category, 还有几个星星 */
+.item > div:first-of-type {
+	flex: 1;
+	margin-left: 10px; 
+	margin-right: 10px; 
+}
+
+.item-name {
+	color: #624630;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.item-name:hover {
+	text-decoration: underline;
+}
+
+.stars {
+	/* align-items: center; 这句好像没用 */
+	display: flex; 
+	padding-top: 10px;
+}
+
+/* 第八部分 */
+/* li右边：address，竖线，收藏桃心 */
+.item-address {
+	line-height: 20px;
+	padding-right: 20px; /* 地址三行距离右边竖线10px */'
+	text-align: right; /* 地址三行靠右 */
+}
+
+/* 这实际是一个div */
+.fav-link { 
+	border-left: 2px solid #FFFFFF; /* 地址和桃心之间有一条白色竖线 */
+	cursor: pointer; /* 鼠标点击桃心鼠标会变成小手 */
+	line-height: 60px; /* 确定了竖线的高度=这个div的高度 */
+	text-align: center; /* 让桃心处于div中心位置 */
+	width: 60px; /* 确定这个div宽度 */
+}
+
+.fav-link:hover {
+	color: #F13F3F; /* 鼠标放在这个桃心上面桃心显示红色 */
+}
+
+/* 第九部分 */
+/* footer section: 上面是两行文字，下面是一个ul里面有三个li */
+footer {
+	height: 200px; 
+	max-width: 1000px;
+	min-width: 600px;
+	margin: 0px auto;
+	background: #434343; /* 最下面背景颜色为深灰色 */
+	font-size: 0.8em;
+	/* position: relative; 这个是站位的 */
+}
+
+footer p {
+	text-align: center; /* 上面两行文字居中 */
+}
+
+/* 点击p会显示显示额外信息 */
+footer p.title {
+	font-size: 1.2em;
+	padding: 15px;
+}
+
+footer ul {
+	align-items: center; /* align-items属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式 */
+	display: flex;
+	padding: 20px; 
+}
+
+footer ul li {
+	flex: 1;
+}
