@@ -1,12 +1,7 @@
-Personalized Recommendation Engine for Events
+**Introduction to Personalized Recommendation Engine for Events**
 
-1. Front End: implemented an interactive web application (HTML, CSS, JavaScript, AJAX) for users to look for events, purchase tickets; improved personalized recommendation based on search history and favorite records.
-2. Back End: created Java Servlets with RESTful APIs to handle HTTP requests and responses.
-3. Built relational databases MySQL to store real event information (price, location, category, etc.) for consistency and migrated to NoSQL database MongoDB for better scalability.
-4. Researched multiple recommendation algorithms (e.g., content-based recommendation) to implement recommendations and evaluate performance (precision vs. recall vs. cost).
-5. Deployed to Amazon EC2 to handle 150 queries per second tested by Apache JMeter.
+**Part 1: A simple sample to present Jupiter**
 
-A simple sample to present Jupiter
 1. Firstly, you need to login.
 ![image](https://github.com/SaoriKaku/Jupiter/blob/master/images/pic1%20login.png)
 
@@ -30,5 +25,13 @@ A simple sample to present Jupiter
 
 8. Finally, you will find events we recommend to you based on your favorite events. 
 ![image](https://github.com/SaoriKaku/Jupiter/blob/master/images/pic8%20recommend.png)
+
+**Part 2: technical points**
+
+1. Front End: implemented an interactive web application (HTML, CSS, JavaScript, AJAX) for users to look for events, purchase tickets; improved personalized recommendation based on search history and favorite records.
+2. Back End: created Java Servlets with RESTful APIs to handle HTTP requests and responses.
+3. Built relational databases MySQL to store real event information (price, location, category, etc.) for consistency and migrated to NoSQL database MongoDB for better scalability.
+4. Researched multiple recommendation algorithms (e.g., content-based recommendation) to implement recommendations and evaluate performance (precision vs. recall vs. cost).
+5. Deployed to Amazon EC2 to handle 150 queries per second tested by Apache JMeter.
 
 Thank you for reading!
