@@ -1,6 +1,7 @@
-**Introduction to Personalized Recommendation Engine for Events**
 
-**Part 1: a simple sample to present Jupiter**
+# Introduction to Personalized Recommendation Engine for Events
+
+## Part 1: a simple sample to present Jupiter
 
 1. Firstly, you need to login.
 ![image](https://github.com/SaoriKaku/Jupiter/blob/master/images/pic1%20login.png)
@@ -26,7 +27,7 @@
 8. Finally, you will find events we recommend to you based on your favorite events. 
 ![image](https://github.com/SaoriKaku/Jupiter/blob/master/images/pic8%20recommend.png)
 
-**Part 2: technical points**
+## Part 2: technical points
 
 1. Front End: implemented an interactive web application (HTML, CSS, JavaScript, AJAX) for users to look for events, purchase tickets; improved personalized recommendation based on search history and favorite records.
 2. Back End: created Java Servlets with RESTful APIs to handle HTTP requests and responses.
