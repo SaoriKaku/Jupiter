@@ -35,4 +35,4 @@
 4. Researched multiple recommendation algorithms (e.g., content-based recommendation) to implement recommendations and evaluate performance (precision vs. recall vs. cost).
 5. Deployed to Amazon EC2 to handle 150 queries per second tested by Apache JMeter.
 
-**Thank you for reading!
+**Thank you for reading!**
