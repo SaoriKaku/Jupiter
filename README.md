@@ -1,7 +1,7 @@
 
 # Introduction to Personalized Recommendation Engine for Events
 
-## Part 1: a simple sample to present Jupiter
+## Part 1: a simple presentation for Jupiter
 
 1. Firstly, you need to login.
 ![image](https://github.com/SaoriKaku/Jupiter/blob/master/images/pic1%20login.png)
