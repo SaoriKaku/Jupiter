@@ -1,5 +1,5 @@
 
-# Introduction to Personalized Recommendation Engine for Events
+# Personalized Recommendation Engine for Events
 
 ## Part 1: a simple presentation for Jupiter
 
